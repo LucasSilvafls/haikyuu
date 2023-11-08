@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Haikyu Personagens | Lucas Silva</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="src/css/scrollbar.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <link rel="icon" type="image/png" href="/src/imagens/logo-karasuno-top.png"/>
+
+    <!-- Para otimizar o carregamento das mídias-->
+    <link rel="stylesheet" href="/src/css/style.css" preload>
+    
+</head>
+
+<style>
+    /* Animação de brilho/sombra da logo */
+    @keyframes pulsar {
+      0% {
+        filter: drop-shadow(0 0 0 #ff9400); 
+      }
+      100% {
+        filter: drop-shadow(0 0 20px #ff9400); 
+      }
+    }
+
+    /* Estilo da imagem */
+    .logo {
+      animation: pulsar 2s alternate-reverse infinite;
+    }
+  </style>
+
+<body>
+    <header class="cabecalho">
+        <div class="fundo-personagem"></div>
+      <img class="logo" src="./src/imagens/Haikyuu-Simbolo-650x366.png" alt="Logo">
+    </header>
+
+    <main class="selecao-personagens">
+        <section class="personagens">
+            <h1 class="titulo"> Selecione seu Jogador </h1>
+            <ul class="lista-de-personagens">
+
+                <li class="personagem selecionado" id="Daishi" data-name="Daichi Sawamura" data-description="Daichi Sawamurama aluno do 3° ano da escola Karasuno. Finado Daichi para os mais próximos. Capitão e Atacante, desenvolveu sua habilidade de liderança por conta da saída do técnico Ukai que foi hospitilizado.">
+                    <img src="./src/imagens/thumbs-haikyu/daichi-thumb.png" alt="Daichi">
+                </li>
+
+                <li class="personagem" id="Hinata" data-name="Shoyo Hinata" data-description="Shoyo Hinata, o novo Pequeno Gigante, Hinatinha, o Solzinho da Karasuno e protagonista. Aluno do 1° ano e atacante, com uma habilidade física absurda e trás muita agilidade e potência para o jogo.">
+                    <img src="./src/imagens/thumbs-haikyu/hinata-thumb.png" alt="Hinata">
+                </li>
+
+                <li class="personagem" id="Kageyama" data-name="Tobio Kageyama" data-description="Tobio Kageyama..também conhecido como o rei das quadras. Estudante do 1° ano e levantador da Karasuno..possui um ego enorme e um trabalho em equipe não muito bom mas é um jogador de ótima qualidade e completo em todos os aspectos.">
+                    <img src="./src/imagens/thumbs-haikyu/kageyama-thumb.png" alt="Kageyama">
+                </li>
+
+                <li class="personagem" id="Asahi" data-name="Asahi Azumane" data-description="Asahi Azumane, o ACE da Karasuno. Veterano assim como o Daichi e o Suga.  Passou um tempo afastado do time e acabou voltando por conta do líbero Nishinoya..Asahi é com certeza o ACE, definitivo e um ótimo atacante e companheiro de time">
+                    <img src="./src/imagens/thumbs-haikyu/asahi-thumb.png" alt="Asahi">
+                </li>
+
+                <li class="personagem" id="Suga" data-name="Koshi Sugawara" data-description="Koshi Sugawara..Suga o pai dos membros da Karasuno. Veterano assim como Daichi e Asashi. Levantador e vice-capitão do time, calmo e gentil com seus companheiros e um bom estrategista que apresenta diversas táticas durante os jogos.">
+                    <img src="./src/imagens/thumbs-haikyu/suga-thumb.png" alt="Sugawara">
+                </li>
+
+                <li class="personagem" id="Nishinoya" data-name="Yu Nishinoya" data-description="Yu Nishinoya..O Divino Guardião da Karasuno, aluno do 2° ano. É o líbero do time e uma pessoa muito energética e temperamental porém dentro de quadra Nishinoya se transforma e possui um foco e uma seriedade fora do comum.">
+                    <img src="./src/imagens/thumbs-haikyu/yuu-thumb.png" alt="Nishinoya">
+                </li>
+
+                <li class="personagem" id="Tanaka" data-name="Ryunosuke Tanaka" data-description="Ryunosuke Tanaka..Tanaka para os mais próximos. Aluno do 2° ano e dupla oficial do Nishinoya...atacante de ponta e um membro um tanto quanto estressado e eufórico.">
+                    <img src="./src/imagens/thumbs-haikyu/tanaka-thumb.png" alt="Tanaka">
+                </li>
+
+                <li class="personagem" id="Tsukishima" data-name="Akiteru Tsukishima" data-description="Akiteru Tsukishima aluno do 1° ano da Karasuno. Bloqueador central do time, um membro um tanto quanto presunçoso e orgulhoso em determinados momentos, isso por que fica claro muitas vezes que ele não acredita em si mesmo.">
+                    <img src="./src/imagens/thumbs-haikyu/tsuki-thumb.png" alt="Tsukishima">
+                </li>
+
+                <li class="personagem" id="Kyoko" data-name="Kyoko Shimizu" data-description="Kyoko Shimizu, aluna do 3° ano e gerente do clube de vôlei da escola. Um tanto quanto misteriosa a gerente do time que é a paixão oficial do Tanaka e Nishinoya se esforça para tenta deixar as coisas na Karasuno bem organizadas e funcionando.">
+                    <img src="./src/imagens/thumbs-haikyu/kyoko-thumb.png" alt="Kyoko">
+                </li>
+                <li class="personagem" id="Ukai" data-name="Keishin Ukai" data-description="Kenshin Ukai, neto de Ikkei Ukai. Ex-jogador e atual treinador o time de voleibol Karasuno. Um técnico um tanto quanto competitivo, preguiçoso e analista, enfim mais uma pérola do time Karasuno.">
+                    <img src="./src/imagens/thumbs-haikyu/ukai-thumb.png" alt="Ukai">
+                </li>
+                <li class="personagem" id="Takeda" data-name="Ittetsu Takeda" data-description="Takeda, o conselheiro da Karasuno. Apesar da sua pouca experiência com volêi ele tenta fazer o seu melhor para o time e os alunos, persistência, otimismo e modéstia são suas principais marcas.">
+                    <img src="./src/imagens/thumbs-haikyu/takeda-thumb.png" alt="Takeda">
+                </li>
+            </ul>
+        </section>
+
+        <!-- Fonte de Haikyu para o texto h2-->
+    <style>
+        @font-face {
+            font-family: minhafonte;
+            src: url(DIMITRI_.TTF) format("truetype");
+        }  
+    </style>
+        <section class="personagens-selecionados">
+            </div>
+                <img class="personagem-grande" src="src/imagens/Daishi-1.png" alt="Personagem Selecionado">
+                <div class="informacoes-personagem">
+                    <h2 class="nome-personagem" id="nome-personagem"> <span>Daichi Sawamura</span></h2>
+                    <p class="descricao-personagem" id="descricao-personagem">Daichi Sawamurama aluno do 3° ano da escola Karasuno. Capitão e Atacante, desenvolveu sua habilidade de liderança e de técnico por conta da saída do técnico Ukai que foi hospitilizado.</p>
+                </div>
+            </h2>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p id="simpleUsage"></p>
+        </div>
+    </footer>
+
+<!-- link do js com o html -->
+    <script src="./src/js/index.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" ></script>
+</body>
+
+</html>
